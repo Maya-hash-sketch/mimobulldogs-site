@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — MimoBulldogs · AKC English Bulldogs · Southern Indiana</title>
+  <meta name="description" content="Inquire about an AKC English Bulldog puppy from MimoBulldogs in Southern Indiana. Tell us about you and your home — we'll be in touch.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" id="nav">
+      <a href="index.html" class="brand">Mimo<span class="brand-accent">Bulldogs</span></a>
+      <button class="nav-toggle" onclick="document.getElementById('nav').classList.toggle('open')">Menu</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="puppies.html">Available Puppies</a></li>
+        <li><a href="girls.html">Girls</a></li>
+        <li><a href="boys.html">Boys</a></li>
+        <li><a href="health.html">Health &amp; Training</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Inquire</a>
+    </nav>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-eyebrow">Contact MimoBulldogs</div>
+      <h1>Tell us about you and your home.</h1>
+      <p class="hero-lead">
+        We place our puppies carefully — one family at a time. The more you can tell
+        us about what you're hoping for, the better we can match you with the right
+        puppy. We read every message and we'll be in touch.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section">
+    <div class="wrap contact-grid">
+
+      <!-- ----- info ----- -->
+      <div class="contact-info">
+        <h2>Get in touch</h2>
+        <p><span class="label">Where:</span> Southern Indiana</p>
+        <p><span class="label">Breeding since:</span> 2016</p>
+        <p><span class="label">Email:</span> [your email]</p>
+        <p><span class="label">Phone:</span> [your phone]</p>
+        <p style="margin-top:24px; color:var(--muted);">
+          [Optional: Add a line here about visiting — e.g. "We welcome visits from
+          families with a deposit on a puppy, by appointment." Or remove this note.]
+        </p>
+        <p style="margin-top:20px; color:var(--muted);">
+          Follow us on
+          <a href="#">[Facebook]</a> ·
+          <a href="#">[Instagram]</a> ·
+          <a href="#">[Google]</a>
+        </p>
+      </div>
+
+      <!-- ----- form ----- -->
+      <div>
+        <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="post">
+          <div class="form-row">
+            <div>
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div>
+              <label for="location">Where are you located?</label>
+              <input type="text" id="location" name="location">
+            </div>
+          </div>
+          <div>
+            <label for="interest">What are you interested in?</label>
+            <select id="interest" name="interest">
+              <option>Available puppy</option>
+              <option>Future litter / waitlist</option>
+              <option>Stud service</option>
+              <option>Just a question</option>
+            </select>
+          </div>
+          <div>
+            <label for="home">Tell us about your home &amp; what you're hoping for</label>
+            <textarea id="home" name="home" placeholder="e.g. We have two kids and a fenced yard, and we're looking for a laid-back male puppy..." required></textarea>
+          </div>
+          <!-- honeypot for spam -->
+          <input type="text" name="_gotcha" style="display:none;">
+          <button type="submit" class="btn btn-primary" style="justify-self:start;">Send message</button>
+        </form>
+        <p style="font-size:0.85rem; color:var(--muted); margin-top:16px;">
+          We typically reply within [1–2 days]. Your message goes straight to our email.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">MimoBulldogs</div>
+        <p>Mini Monster Bulldogs LLC — AKC English Bulldogs raised with love, in our home, for families who care.</p>
+        <p style="margin-top:10px; font-size:0.9rem;">Breeding since 2016 · Southern Indiana</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="puppies.html">Available Puppies</a>
+        <a href="girls.html">Girls</a>
+        <a href="boys.html">Boys</a>
+        <a href="health.html">Health &amp; Training</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <a href="contact.html">Inquire about a puppy</a>
+        <a href="#">[your email]</a>
+        <a href="#">[your phone]</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 MimoBulldogs · Mini Monster Bulldogs LLC · AKC English Bulldogs · Raised with love
+    </div>
+  </footer>
+
+</body>
+</html>
