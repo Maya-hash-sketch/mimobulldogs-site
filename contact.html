@@ -61,7 +61,7 @@
 
       <!-- ----- form ----- -->
       <div>
-        <form action="https://formsubmit.co/mimobulldogs@gmail.com" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
           <div class="form-row">
             <div>
               <label for="name">Your name</label>
@@ -95,14 +95,14 @@
             <label for="home">Tell us about your home &amp; what you're hoping for</label>
             <textarea id="home" name="home" placeholder="e.g. We have two kids and a fenced yard, and we're looking for a laid-back male puppy..." required></textarea>
           </div>
-          <!-- delivery options (formsubmit.co) -->
-          <input type="hidden" name="_subject" value="New inquiry from minimonsterbulldogs.com">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://minimonsterbulldogs.com/thanks">
-          <!-- honeypots for spam -->
-          <input type="text" name="_honey" style="display:none;">
-          <input type="text" name="_gotcha" style="display:none;">
+          <!-- delivery options (web3forms.com) -->
+          <!-- the access key is meant to be public, per Web3Forms docs -->
+          <input type="hidden" name="access_key" value="f1373b3d-bcd3-4d17-a3b5-0364ee16a2c2">
+          <input type="hidden" name="subject" value="New puppy inquiry from minimonsterbulldogs.com">
+          <input type="hidden" name="from_name" value="MimoBulldogs website">
+          <input type="hidden" name="redirect" value="https://minimonsterbulldogs.com/thanks">
+          <!-- honeypot for spam -->
+          <input type="checkbox" name="botcheck" style="display:none;">
           <button type="submit" class="btn btn-primary" style="justify-self:start;">Send message</button>
         </form>
         <p style="font-size:0.85rem; color:var(--muted); margin-top:16px;">
