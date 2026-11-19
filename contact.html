@@ -55,15 +55,13 @@
         </p>
         <p style="margin-top:20px; color:var(--muted);">
           Follow us on
-          <a href="#">[Facebook]</a> ·
-          <a href="#">[Instagram]</a> ·
-          <a href="#">[Google]</a>
+          <a href="https://www.instagram.com/mimobulldogs/" target="_blank" rel="noopener">Instagram</a>
         </p>
       </div>
 
       <!-- ----- form ----- -->
       <div>
-        <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="post">
+        <form action="https://formsubmit.co/mimobulldogs@gmail.com" method="POST">
           <div class="form-row">
             <div>
               <label for="name">Your name</label>
@@ -97,12 +95,18 @@
             <label for="home">Tell us about your home &amp; what you're hoping for</label>
             <textarea id="home" name="home" placeholder="e.g. We have two kids and a fenced yard, and we're looking for a laid-back male puppy..." required></textarea>
           </div>
-          <!-- honeypot for spam -->
+          <!-- delivery options (formsubmit.co) -->
+          <input type="hidden" name="_subject" value="New inquiry from minimonsterbulldogs.com">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://minimonsterbulldogs.com/thanks">
+          <!-- honeypots for spam -->
+          <input type="text" name="_honey" style="display:none;">
           <input type="text" name="_gotcha" style="display:none;">
           <button type="submit" class="btn btn-primary" style="justify-self:start;">Send message</button>
         </form>
         <p style="font-size:0.85rem; color:var(--muted); margin-top:16px;">
-          We typically reply within [1–2 days]. Your message goes straight to our email.
+          We typically reply within 1&ndash;2 business days. Your message goes straight to our email.
         </p>
       </div>
     </div>
